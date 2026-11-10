@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090d1b">
+<title>Yasmin AI | Your Personal AI Assistant</title>
+<meta name="description" content="Meet Yasmin AI, your personal AI assistant for Android.">
+
+<style>
+:root{
+  --bg:#080c18;
+  --panel:#111a2e;
+  --text:#f4f7ff;
+  --muted:#aab6d0;
+  --cyan:#54e4ef;
+  --purple:#9b7cff;
+  --line:#263653;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:radial-gradient(ellipse at 15% 0%,#1a2450,transparent 42%),var(--bg);
+  color:var(--text);
+  font-family:Arial,system-ui,sans-serif;
+  line-height:1.6;
+}
+a{text-decoration:none;color:inherit}
+.wrap{width:min(1120px,92%);margin:auto}
+nav{
+  display:flex;align-items:center;
+  justify-content:space-between;padding:22px 0;
+}
+.brand{font-size:1.4rem;font-weight:850}
+.brand span{color:var(--cyan)}
+.navlinks{display:flex;gap:20px;color:var(--muted)}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:12px 19px;border-radius:12px;
+  background:linear-gradient(110deg,var(--cyan),#8b9cff);
+  color:#07101d;font-weight:800;border:0;cursor:pointer;
+}
+.secondary{background:#17223b;color:white;border:1px solid var(--line)}
+.hero{
+  padding:75px 0;display:grid;
+  grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;
+}
+.eyebrow{color:var(--cyan);font-weight:bold;letter-spacing:2px}
+.hero h1{font-size:clamp(2.7rem,6vw,5rem);line-height:1.05}
+.gradient{
+  background:linear-gradient(100deg,#fff,var(--cyan),#b7a4ff);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero p{color:var(--muted);font-size:1.1rem}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.orb-wrap{display:grid;place-items:center;min-height:300px}
+.orb{
+  width:260px;aspect-ratio:1;border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,#d6ffff,#62eaf0 10%,#4b79d9 38%,#292b70 65%,#11182d 75%);
+  box-shadow:0 0 60px #5be4f066,0 0 130px #7864ff44;
+}
+section{padding:60px 0}
+.section-head{text-align:center;max-width:700px;margin:0 auto 35px}
+.section-head h2{font-size:clamp(2rem,4vw,3rem)}
+.muted,.section-head p{color:var(--muted)}
+.features,.pricing{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:17px;
+}
+.feature,.plan,.paybox{
+  background:linear-gradient(145deg,#151f37,#0e1729);
+  border:1px solid var(--line);border-radius:20px;padding:24px;
+}
+.feature h3{margin-bottom:5px}
+.feature p{color:var(--muted)}
+.ico{font-size:1.8rem}
+.plan.popular{border-color:var(--cyan)}
+.price{font-size:2.6rem;font-weight:850}
+.price small{font-size:.9rem;color:var(--muted)}
+.plan ul{padding-left:20px;color:var(--muted);min-height:95px}
+.plan .btn{width:100%;margin-top:12px}
+.paybox{max-width:680px;margin:30px auto;display:none}
+.paybox.show{display:block}
+.upi{
+  display:flex;gap:10px;align-items:center;
+  flex-wrap:wrap;background:#091222;
+  border:1px dashed #3c5b7a;padding:13px;border-radius:12px;
+}
+.qr{
+  width:190px;height:190px;background:white;
+  padding:8px;border-radius:12px;
+  display:block;margin:18px auto;
+}
+.pay-actions{display:flex;gap:10px;flex-wrap:wrap}
+.steps{color:var(--muted);padding-left:20px}
+.notice{
+  background:#17243c;border-left:3px solid var(--cyan);
+  padding:13px;border-radius:8px;
+}
+footer{
+  border-top:1px solid var(--line);
+  padding:28px 0;color:var(--muted);text-align:center;
+}
+@media(max-width:800px){
+  .hero{grid-template-columns:1fr;padding:45px 0}
+  .features,.pricing{grid-template-columns:1fr}
+  .navlinks{gap:10px;font-size:.85rem}
+}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+
+<nav>
+  <a class="brand" href="#">YASMIN <span>AI</span></a>
+  <div class="navlinks">
+    <a href="#features">Features</a>
+    <a href="#plans">Plans</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <a class="btn" href="#plans">Get Yasmin AI</a>
+</nav>
+
+<main>
+<div class="hero">
+  <div>
+    <div class="eyebrow">YOUR PERSONAL AI COMPANION</div>
+    <h1>Meet your next<br><span class="gradient">AI Assistant.</span></h1>
+    <p>
+      Yasmin AI brings intelligent assistance, natural conversations
+      and useful everyday tools together in one Android experience.
+    </p>
+    <div class="actions">
+      <a class="btn" href="#plans">Explore Plans</a>
+      <a class="btn secondary" href="#features">Discover Features</a>
+    </div>
+  </div>
+  <div class="orb-wrap"><div class="orb"></div></div>
+</div>
+
+<section id="features">
+  <div class="section-head">
+    <div class="eyebrow">DESIGNED FOR EVERYDAY USE</div>
+    <h2>Powerful Features. Simple Experience.</h2>
+    <p>Explore Yasmin AI and choose the license that suits you.</p>
+  </div>
+
+  <div class="features">
+    <div class="feature">
+      <div class="ico">✦</div>
+      <h3>AI Conversations</h3>
+      <p>Interact with an AI assistant and get help with everyday questions.</p>
+    </div>
+    <div class="feature">
+      <div class="ico">◉</div>
+      <h3>Natural Voice</h3>
+      <p>Voice-focused interaction for convenient assistant use.</p>
+    </div>
+    <div class="feature">
+      <div class="ico">文</div>
+      <h3>Multilingual</h3>
+      <p>Communicate across supported languages.</p>
+    </div>
+    <div class="feature">
+      <div class="ico">⌘</div>
+      <h3>Smart Tools</h3>
+      <p>Access useful assistant tools from one Android application.</p>
+    </div>
+    <div class="feature">
+      <div class="ico">◇</div>
+      <h3>Personal Touch</h3>
+      <p>A friendly assistant experience for everyday interactions.</p>
+    </div>
+    <div class="feature">
+      <div class="ico">↗</div>
+      <h3>Updates</h3>
+      <p>Choose a plan with the update coverage described in its details.</p>
+    </div>
+  </div>
+</section>
+
+<section id="plans">
+  <div class="section-head">
+    <div class="eyebrow">CHOOSE YOUR ACCESS</div>
+    <h2>Simple, Transparent Plans</h2>
+    <p>Select a plan to view UPI payment instructions.</p>
+  </div>
+
+  <div class="pricing">
+    <div class="plan">
+      <h3>Normal</h3>
+      <div class="price">₹99 <small>/ 1 month</small></div>
+      <p class="muted">Basic access for one month.</p>
+      <ul>
+        <li>1 month license</li>
+        <li>No future updates included</li>
+        <li>Manual activation</li>
+      </ul>
+      <button class="btn" onclick="choosePlan('Normal',99,'1 month')">Choose Normal</button>
+    </div>
+
+    <div class="plan">
+      <h3>Lifetime</h3>
+      <div class="price">₹199 <small>/ lifetime</small></div>
+      <p class="muted">One-time lifetime license.</p>
+      <ul>
+        <li>Lifetime license</li>
+        <li>One-time payment</li>
+        <li>Manual activation</li>
+      </ul>
+      <button class="btn" onclick="choosePlan('Lifetime',199,'Lifetime')">Choose Lifetime</button>
+    </div>
+
+    <div class="plan popular">
+      <h3>Pro Max</h3>
+      <div class="price">₹299 <small>/ 1 year</small></div>
+      <p class="muted">Extended access with updates.</p>
+      <ul>
+        <li>1 year license</li>
+        <li>Updates during license period</li>
+        <li>Manual activation</li>
+      </ul>
+      <button class="btn" onclick="choosePlan('Pro Max',299,'1 year')">Choose Pro Max</button>
+    </div>
+  </div>
+
+  <div class="paybox" id="paybox">
+    <h2 id="selectedTitle">Complete Payment</h2>
+    <p class="muted" id="selectedInfo"></p>
+
+    <div class="upi">
+      <span>UPI ID:</span>
+      <strong id="upiText">9074607294@ybl</strong>
+      <button class="btn secondary" onclick="copyUpi()">Copy UPI ID</button>
+    </div>
+
+    <img class="qr" id="qr" alt="UPI payment QR code">
+
+    <div class="pay-actions">
+      <a class="btn" id="upiLink" href="#">Open UPI App</a>
+      <a class="btn secondary" id="whatsapp" target="_blank" rel="noopener">
+        Send Payment Screenshot
+      </a>
+    </div>
+
+    <ol class="steps">
+      <li>Pay the exact amount using the UPI ID or QR code.</li>
+      <li>Take a screenshot of successful payment.</li>
+      <li>Send the screenshot on WhatsApp with your selected plan.</li>
+      <li>Payment will be checked manually. License activation happens after verification.</li>
+    </ol>
+
+    <div class="notice">
+      Payment is not automatically verified by this website.
+      Never share your UPI PIN or OTP.
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-head">
+    <div class="eyebrow">NEED HELP?</div>
+    <h2>Contact Yasmin AI</h2>
+    <p>For payment screenshot submission and license activation, contact us on WhatsApp.</p>
+    <a class="btn" href="https://wa.me/919074607294" target="_blank">
+      WhatsApp: 9074607294
+    </a>
+  </div>
+</section>
+</main>
+
+<footer>
+  © <span id="year"></span> Yasmin AI. All rights reserved.
+</footer>
+</div>
+
+<script>
+const UPI='9074607294@ybl';
+const PHONE='919074607294';
+
+function choosePlan(name,amount,duration){
+  document.getElementById('paybox').classList.add('show');
+
+  document.getElementById('selectedTitle').textContent=name+' Plan Payment';
+  document.getElementById('selectedInfo').textContent=
+    'Amount: ₹'+amount+' | License duration: '+duration;
+
+  const note='Yasmin AI '+name+' plan';
+
+  const uri='upi://pay?pa='+encodeURIComponent(UPI)+
+    '&pn='+encodeURIComponent('Yasmin AI')+
+    '&am='+amount+'&cu=INR&tn='+encodeURIComponent(note);
+
+  document.getElementById('qr').src=
+    'https://api.qrserver.com/v1/create-qr-code/?size=220x220&data='+
+    encodeURIComponent(uri);
+
+  document.getElementById('upiLink').href=uri;
+
+  document.getElementById('whatsapp').href=
+    'https://wa.me/'+PHONE+'?text='+
+    encodeURIComponent(
+      'Hello, I have paid for Yasmin AI '+name+
+      ' plan (₹'+amount+'). I am attaching my payment screenshot. Please verify and activate my license.'
+    );
+
+  document.getElementById('paybox').scrollIntoView({
+    behavior:'smooth',
+    block:'center'
+  });
+}
+
+async function copyUpi(){
+  try{
+    await navigator.clipboard.writeText(UPI);
+    alert('UPI ID copied: '+UPI);
+  }catch(e){
+    alert('Please copy manually: '+UPI);
+  }
+}
+
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+  </html>
+  
